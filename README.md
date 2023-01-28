@@ -94,9 +94,10 @@ From the above characteristic table, we can directly write the next state equati
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Sivaramakrishnan B
 RegisterNumber: 22006798
+```
 
 # SR flipflop
-
+```
 module FlipFlopSR(S,R,clock,Q,Qbar);
 input S,R,clock;
 output Q,Qbar;
@@ -106,9 +107,10 @@ nand(Y,R,clock);
 nand(Q,X,Qbar);
 nand(Qbar,Y,Q);
 endmodule
+```
 
 # JK flipflop
-
+```
 module FlipFlopJK(J,K,clock,Q,Qbar);
 input J,K,clock;
 output Q,Qbar;
@@ -118,9 +120,10 @@ nand(S,K,clock,Q);
 nand(Q,P,Qbar);
 nand(Qbar,S,Q);
 endmodule
+```
 
 # T flipflop
-
+```
 module FlipFlopT(T,clock,Q,Qbar);
 input T,clock;
 output Q,Qbar;
@@ -130,9 +133,10 @@ nand(B,T,clock,Q);
 nand(Q,A,Qbar);
 nand(Qbar,B,Q);
 endmodule
+```
 
 # D flipflop
-
+```
 module FlipFlopD(D,clock,Q,Qbar);
 input D,clock;
 output Q,Qbar;
